@@ -4,6 +4,7 @@ package form;
 import java.awt.Button;
 import java.awt.Checkbox;
 import java.awt.Frame;
+import java.awt.Graphics;
 import java.awt.Label;
 import java.awt.RadialGradientPaint;
 import java.awt.TextArea;
@@ -114,6 +115,13 @@ public class Form extends Frame {
         setLayout(null);
         setVisible(true);
     }
+
+    @Override
+    public void paint(Graphics g) {
+        
+           g.drawRect(60, 40, 340, 250);
+    }
+    
     public static void main(String[] args) {
         new Form();
     }
