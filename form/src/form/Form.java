@@ -7,12 +7,9 @@ import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.Label;
-import java.awt.RadialGradientPaint;
 import java.awt.TextArea;
 import java.awt.TextField;
 import javax.swing.JRadioButton;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
 
 public class Form extends Frame {
 
@@ -109,7 +106,7 @@ public class Form extends Frame {
             
         
         B1 = new Button("SAVE");
-        B1.setBounds(200, 290, 80, 20);
+        B1.setBounds(200, 295, 80, 20);
         B1.setBackground(Color.red);
         add(B1);
        
@@ -123,6 +120,7 @@ public class Form extends Frame {
         
            g.drawRect(60, 40, 340, 290);
            g.drawLine(160, 40, 160, 330);
+           g.drawLine(60, 280, 400, 280);
            
     }
     
@@ -131,3 +129,5 @@ public class Form extends Frame {
     }
     
 }
+
+
