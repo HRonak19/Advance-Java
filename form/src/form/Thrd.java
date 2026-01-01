@@ -31,7 +31,10 @@ public class Thrd {
            TH T1,T2,T3;
            
             T1 = new TH();
+            T1.setPriority(Thread.MAX_PRIORITY);
+            T1.setName("MAIN Thrade");
                 T1.start();
+              System.out.println("Live : "+T1.isAlive()+" name : "+T1.getName()+" Priority : "+T1.getPriority());
                 
             T2 = new TH();
                 T2.start();
